@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes progressBar {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
 :root {
   --color-brand: #C8102E;
   --color-dark: #0B0F19;
@@ -50,6 +55,16 @@
   .card-hover {
     @apply transition-all duration-300 hover:translate-y-[-4px] hover:shadow-2xl;
   }
+}
+
+/* Logo carousel: grayscale → color on hover */
+.logo-item img {
+  filter: grayscale(1) opacity(0.4);
+  transition: filter 0.35s ease, opacity 0.35s ease;
+}
+.logo-item:hover img {
+  filter: none;
+  opacity: 1;
 }
 
 .hero-slide {

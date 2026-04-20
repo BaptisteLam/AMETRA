@@ -1,39 +1,48 @@
 import ScrollAnimator from "@/components/ScrollAnimator";
+import { Shield, Plane, Atom, Train, Anchor, FlaskConical } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-const industries = [
+interface Industry {
+  name: string;
+  Icon: LucideIcon;
+  clients: string[];
+  bg: string;
+}
+
+const industries: Industry[] = [
   {
     name: "Défense",
-    icon: "🛡",
+    Icon: Shield,
     clients: ["Nexter Systems", "MBDA", "Dassault Aviation", "Naval Group"],
     bg: "https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=600&q=80",
   },
   {
     name: "Aéronautique & Spatial",
-    icon: "🚀",
+    Icon: Plane,
     clients: ["Airbus", "ArianeGroup", "Safran", "Stelia"],
-    bg: "https://images.unsplash.com/photo-1457364887197-9150188c107b?auto=format&fit=crop&w=600&q=80",
+    bg: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80",
   },
   {
     name: "Nucléaire & Énergie",
-    icon: "⚛",
-    clients: ["Framatome", "Technicatome", "Orano", "EDF"],
-    bg: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?auto=format&fit=crop&w=600&q=80",
+    Icon: Atom,
+    clients: ["Framatome", "Technicatome", "Orano"],
+    bg: "https://images.unsplash.com/photo-1495673638879-3a951536b9d5?auto=format&fit=crop&w=600&q=80",
   },
   {
     name: "Transport & Ferroviaire",
-    icon: "🚄",
+    Icon: Train,
     clients: ["RATP", "SNCF", "Siemens", "Liebherr"],
     bg: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=600&q=80",
   },
   {
     name: "Industrie Navale",
-    icon: "⚓",
+    Icon: Anchor,
     clients: ["Naval Group", "Chantiers de l'Atlantique"],
     bg: "https://images.unsplash.com/photo-1553199927-4e9f0ef86e65?auto=format&fit=crop&w=600&q=80",
   },
   {
     name: "Innovation & R&D",
-    icon: "🔬",
+    Icon: FlaskConical,
     clients: ["AMETRA Research", "Projets européens"],
     bg: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80",
   },
@@ -72,9 +81,7 @@ export default function Industries() {
                 />
                 <div className="absolute inset-0 bg-brand-dark/60 group-hover:bg-brand-red/70 transition-all duration-500" />
                 <div className="absolute inset-0 flex flex-col justify-end p-6">
-                  <div className="text-2xl mb-2 transition-transform duration-300 group-hover:-translate-y-1">
-                    {ind.icon}
-                  </div>
+                  <ind.Icon className="w-6 h-6 text-white/70 group-hover:text-white mb-2 transition-colors" />
                   <h3 className="font-display font-bold text-white uppercase text-lg leading-tight mb-2">
                     {ind.name}
                   </h3>

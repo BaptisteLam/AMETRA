@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import clsx from "clsx";
+import AmetraLogo from "./AmetraLogo";
 
 const navItems = [
   { label: "Blog", href: "/blog" },
@@ -11,8 +12,7 @@ const navItems = [
     label: "Groupe",
     href: "/groupe",
     children: [
-      { label: "Présentation", href: "/groupe" },
-      { label: "AMETRA Research", href: "/ametra-research" },
+      { label: "Groupe", href: "/groupe" },
     ],
   },
   {
@@ -22,6 +22,7 @@ const navItems = [
       { label: "AMETRA Engineering", href: "/ametra-engineering" },
       { label: "AMETRA Integration", href: "/ametra-integration" },
       { label: "STYREL", href: "/styrel" },
+      { label: "AMETRA Research", href: "/ametra-research" },
     ],
   },
   { label: "Références", href: "/references" },
@@ -51,25 +52,7 @@ export default function Header() {
       )}
     >
       <div className="container-wide flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-12 h-12 flex items-center justify-center">
-            <svg viewBox="0 0 48 48" className="w-12 h-12">
-              <polygon points="24,2 46,44 2,44" fill="#C8102E" />
-              <polygon points="24,8 42,42 6,42" fill="#C8102E" />
-              <path d="M15,38 L24,12 L33,38" fill="none" stroke="white" strokeWidth="3.5" />
-              <path d="M18,29 L30,29" stroke="white" strokeWidth="3.5" />
-            </svg>
-          </div>
-          <div>
-            <div className="text-white font-display font-bold text-2xl tracking-[0.1em] leading-none group-hover:text-brand-red transition-colors">
-              AMETRA
-            </div>
-            <div className="text-brand-red text-[10px] tracking-[0.35em] font-display font-semibold uppercase leading-none mt-0.5">
-              GROUP
-            </div>
-          </div>
-        </Link>
+        <AmetraLogo variant="white" />
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-1">
@@ -82,13 +65,13 @@ export default function Header() {
             >
               <Link
                 href={item.href}
-                className="flex items-center gap-1 px-4 py-2 text-white/80 hover:text-white text-[13px] font-semibold tracking-widest uppercase transition-all duration-200 hover:text-brand-red"
+                className="flex items-center gap-1 px-4 py-2 text-white/80 hover:text-brand-red text-[13px] font-semibold tracking-widest uppercase transition-all duration-200"
               >
                 {item.label}
                 {item.children && <ChevronDown className="w-3 h-3 opacity-60" />}
               </Link>
               {item.children && openDropdown === item.label && (
-                <div className="absolute top-full left-0 w-56 bg-brand-dark border border-white/10 shadow-2xl py-2 animate-fade-in">
+                <div className="absolute top-full left-0 w-60 bg-brand-dark border border-white/10 shadow-2xl py-2 animate-fade-in">
                   {item.children.map((child) => (
                     <Link
                       key={child.label}
