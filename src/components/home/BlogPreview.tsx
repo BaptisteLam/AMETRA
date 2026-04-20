@@ -4,33 +4,33 @@ import ScrollAnimator from "@/components/ScrollAnimator";
 
 const posts = [
   {
-    date: "5 décembre 2023",
-    category: "Événement",
-    title: "Le WNE 2023 comme si vous y étiez !",
+    date: "2 Avril 2026",
+    category: "Industrie",
+    title: "Partenariat Ametra et groupe SNEF : de l'ingénierie nucléaire à la synergie industrielle nationale",
     excerpt:
-      "La 5ème édition du World Nuclear Exhibition (WNE), le salon international de l'énergie nucléaire civile, s'est tenue à Villepinte du 28 au 30 novembre 2023.",
+      "Lancé en 2019 auprès du pôle nucléaire du groupe via l'entité SNEF Power Services (SPS), le partenariat avec Ametra Group s'est consolidé au fil des livrables. Initialement concentrée sur l'ingénierie électrique pour la filière énergie, cette collaboration...",
     image:
-      "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1495673638879-3a951536b9d5?auto=format&fit=crop&w=600&q=80",
     href: "/blog",
   },
   {
-    date: "15 octobre 2023",
-    category: "Innovation",
-    title: "AMETRA Research : avancées sur le projet ORCA",
+    date: "2 Avril 2026",
+    category: "Bureau d'études",
+    title: "Structurer la filière Projet : l'enjeu de la transversalité inter-agences",
     excerpt:
-      "Notre équipe R&D présente les dernières avancées du projet ORCA, cofinancé par le FEDER, sur la modélisation péridynamique des matériaux composites.",
-    image:
-      "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80",
-    href: "/blog",
-  },
-  {
-    date: "8 septembre 2023",
-    category: "Partenariat",
-    title: "NUCON AMETRA renforce sa présence en Inde",
-    excerpt:
-      "Notre joint-venture indienne NUCON AMETRA Electronics Systems continue son développement avec de nouveaux contrats dans la défense locale.",
+      "Dans un groupe d'ingénierie comme Ametra, l'intégration d'un collaborateur suit traditionnellement un parcours local au sein de son agence. Si ce modèle est éprouvé pour les profils d'ingénieurs et de projeteurs, dont la masse critique au...",
     image:
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
+    href: "/blog",
+  },
+  {
+    date: "2 Avril 2026",
+    category: "Innovation",
+    title: "Capitalisation technique et IA : les enseignements du partenariat entre Ametra et l'ECE",
+    excerpt:
+      "L'exploitation du retour d'expérience dans la documentation technique. Le retour d'expérience (REX) est la base de l'ingénierie de haute précision. Chez Ametra, ce savoir est déposé dans des volumes massifs de documents techniques, de rapports d'expertise et de...",
+    image:
+      "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=600&q=80",
     href: "/blog",
   },
 ];

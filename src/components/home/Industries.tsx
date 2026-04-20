@@ -26,7 +26,7 @@ const industries: Industry[] = [
     name: "Nucléaire & Énergie",
     Icon: Atom,
     clients: ["Framatome", "Technicatome", "Orano"],
-    bg: "https://images.unsplash.com/photo-1495673638879-3a951536b9d5?auto=format&fit=crop&w=600&q=80",
+    bg: "https://images.unsplash.com/photo-1570358934836-6802981e481e?auto=format&fit=crop&w=600&q=80",
   },
   {
     name: "Transport & Ferroviaire",
@@ -38,7 +38,7 @@ const industries: Industry[] = [
     name: "Industrie Navale",
     Icon: Anchor,
     clients: ["Naval Group", "Chantiers de l'Atlantique"],
-    bg: "https://images.unsplash.com/photo-1520442786067-d2d30db3e2c4?auto=format&fit=crop&w=600&q=80",
+    bg: "https://images.unsplash.com/photo-1574688010386-b56b7bf97c8b?auto=format&fit=crop&w=600&q=80",
   },
   {
     name: "Innovation & R&D",
