@@ -37,7 +37,7 @@ const posts = [
 
 export default function BlogPreview() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-brand-navy">
       <div className="container-wide">
         <ScrollAnimator>
           <div className="animate-on-scroll flex items-end justify-between mb-14 flex-wrap gap-4">
@@ -48,7 +48,7 @@ export default function BlogPreview() {
                   Actualités
                 </span>
               </div>
-              <h2 className="section-title text-brand-dark">
+              <h2 className="section-title text-white">
                 En direct <span className="text-brand-red">du blog</span>
               </h2>
             </div>
@@ -61,7 +61,7 @@ export default function BlogPreview() {
             {posts.map((post, i) => (
               <article
                 key={post.title}
-                className={`animate-on-scroll delay-${(i + 1) * 100} group border border-gray-100 hover:border-brand-red/30 transition-all duration-300 hover:shadow-xl`}
+                className={`animate-on-scroll delay-${(i + 1) * 100} group bg-white border border-white/10 hover:border-brand-red/30 transition-all duration-300 hover:shadow-xl`}
               >
                 <div className="relative h-52 overflow-hidden">
                   <div
