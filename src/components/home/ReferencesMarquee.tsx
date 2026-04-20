@@ -18,7 +18,11 @@ const clients = [
   { name: "RATP",              logo: "https://logo.clearbit.com/ratp.fr" },
   { name: "SNCF",              logo: "https://logo.clearbit.com/sncf.com" },
   { name: "Liebherr",          logo: "https://logo.clearbit.com/liebherr.com" },
-  { name: "NEXTER / KNDS",     logo: "https://logo.clearbit.com/knds.com" },
+  { name: "KNDS",              logo: "https://logo.clearbit.com/knds.com" },
+  { name: "EDF",               logo: "https://logo.clearbit.com/edf.fr" },
+  { name: "Alstom",            logo: "https://logo.clearbit.com/alstom.com" },
+  { name: "CEA",               logo: "https://logo.clearbit.com/cea.fr" },
+  { name: "Rolls-Royce",       logo: "https://logo.clearbit.com/rolls-royce.com" },
   { name: "Technicatome",      logo: null },
   { name: "Stelia Aerospace",  logo: "https://logo.clearbit.com/stelia-aerospace.com" },
 ];

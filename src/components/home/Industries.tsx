@@ -38,7 +38,7 @@ const industries: Industry[] = [
     name: "Industrie Navale",
     Icon: Anchor,
     clients: ["Naval Group", "Chantiers de l'Atlantique"],
-    bg: "https://images.unsplash.com/photo-1553199927-4e9f0ef86e65?auto=format&fit=crop&w=600&q=80",
+    bg: "https://images.unsplash.com/photo-1520442786067-d2d30db3e2c4?auto=format&fit=crop&w=600&q=80",
   },
   {
     name: "Innovation & R&D",

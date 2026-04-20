@@ -8,13 +8,7 @@ import AmetraLogo from "./AmetraLogo";
 
 const navItems = [
   { label: "Blog", href: "/blog" },
-  {
-    label: "Groupe",
-    href: "/groupe",
-    children: [
-      { label: "Groupe", href: "/groupe" },
-    ],
-  },
+  { label: "Groupe", href: "/groupe" },
   {
     label: "Expertise",
     href: "/expertise",
@@ -52,7 +46,7 @@ export default function Header() {
       )}
     >
       <div className="container-wide flex items-center justify-between">
-        <AmetraLogo variant="white" />
+        <AmetraLogo variant={scrolled ? "white" : "red"} />
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-1">
