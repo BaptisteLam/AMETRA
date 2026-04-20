@@ -87,7 +87,7 @@ export default function CarrieresPage() {
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   {[
-                    { n: "1 400+", l: "Collaborateurs" },
+                    { n: "750+", l: "Collaborateurs" },
                     { n: "40", l: "Ans d'histoire" },
                     { n: "5", l: "Filières métier" },
                     { n: "15+", l: "Sites en France" },

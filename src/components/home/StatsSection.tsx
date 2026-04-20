@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 1400, suffix: "+", label: "Experts", desc: "collaborateurs en France et à l'international" },
+  { value: 750, suffix: "+", label: "Experts", desc: "collaborateurs en France et à l'international" },
   { value: 40, suffix: " ans", label: "D'expérience", desc: "au service des grands programmes industriels" },
   { value: 15, suffix: "", label: "Implantations", desc: "en France, Inde, Tunisie et Allemagne" },
   { value: 3, suffix: "", label: "Business Units", desc: "Engineering, Integration & STYREL" },

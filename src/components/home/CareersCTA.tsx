@@ -72,7 +72,7 @@ export default function CareersCTA() {
               ))}
 
               <div className="glass p-6 mt-6">
-                <div className="text-brand-red font-display font-bold text-4xl mb-1">1 400+</div>
+                <div className="text-brand-red font-display font-bold text-4xl mb-1">750+</div>
                 <div className="text-white text-sm">collaborateurs passionnés</div>
                 <div className="text-white/40 text-xs mt-2">
                   Aéronautique · Défense · Nucléaire · Ferroviaire

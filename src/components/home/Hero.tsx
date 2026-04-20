@@ -11,23 +11,14 @@ const slides = [
   {
     id: 0,
     tag: "Défense",
-    subtitle: ["Groupe AMETRA", "De la Défense"],
+    subtitle: ["Dassault", "Rafale"],
     desc: "40 ans d'expertise au service des grands programmes militaires et de défense nationale",
-    bg: "https://images.unsplash.com/photo-1540946485063-a40da27545f8?auto=format&fit=crop&w=1920&q=80",
+    bg: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80",
     cta: "Découvrir le groupe",
     href: "/groupe",
   },
   {
     id: 1,
-    tag: "Ferroviaire",
-    subtitle: ["Transport", "& Mobilité"],
-    desc: "Systèmes embarqués, réseaux de bord et intégration pour les transports du futur",
-    bg: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1920&q=80",
-    cta: "Notre expertise",
-    href: "/expertise",
-  },
-  {
-    id: 2,
     tag: "Nucléaire",
     subtitle: ["Énergie", "Nucléaire"],
     desc: "Ingénierie mécanique, calcul et simulation pour les réacteurs et installations nucléaires",
@@ -36,22 +27,31 @@ const slides = [
     href: "/references",
   },
   {
+    id: 2,
+    tag: "Innovation & R&D",
+    subtitle: ["Innovation", "& Recherche"],
+    desc: "Projets européens, péridynamique et recherche appliquée pour les industries de pointe",
+    bg: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1920&q=80",
+    cta: "AMETRA Research",
+    href: "/ametra-research",
+  },
+  {
     id: 3,
+    tag: "Ferroviaire",
+    subtitle: ["Transport", "& Mobilité"],
+    desc: "Systèmes embarqués, réseaux de bord et intégration pour les transports du futur",
+    bg: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1920&q=80",
+    cta: "Notre expertise",
+    href: "/expertise",
+  },
+  {
+    id: 4,
     tag: "Aviation Civile",
     subtitle: ["Aéronautique", "Civile"],
     desc: "Structures, systèmes embarqués et intégration pour les grands programmes aéronautiques",
     bg: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80",
     cta: "AMETRA Engineering",
     href: "/ametra-engineering",
-  },
-  {
-    id: 4,
-    tag: "Spatial",
-    subtitle: ["Espace", "& Lanceurs"],
-    desc: "Harnais, intégration systèmes et sous-ensembles pour les programmes spatiaux européens",
-    bg: "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=1920&q=80",
-    cta: "AMETRA Integration",
-    href: "/ametra-integration",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function Hero() {
       {/* Side counters */}
       <div className="absolute right-8 top-1/2 -translate-y-1/2 z-20 hidden xl:flex flex-col gap-4">
         {[
-          { n: "1 400+", label: "Experts" },
+          { n: "750+", label: "Experts" },
           { n: "40", label: "Ans" },
           { n: "15", label: "Sites" },
           { n: "3", label: "Continents" },
