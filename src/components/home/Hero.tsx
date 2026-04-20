@@ -53,6 +53,15 @@ const slides = [
     cta: "AMETRA Engineering",
     href: "/ametra-engineering",
   },
+  {
+    id: 5,
+    tag: "Spatial",
+    subtitle: ["Espace", "& Lanceurs"],
+    desc: "Harnais, intégration systèmes et sous-ensembles pour les programmes spatiaux européens",
+    bg: "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=1920&q=80",
+    cta: "AMETRA Integration",
+    href: "/ametra-integration",
+  },
 ];
 
 export default function Hero() {
