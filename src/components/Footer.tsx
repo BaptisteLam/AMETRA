@@ -173,27 +173,27 @@ export default function Footer() {
     <footer className="bg-brand-dark text-white">
 
       {/* ── Sociétés du Groupe ─────────────────────────────── */}
-      <div className="border-b border-white/5">
+      <div className="bg-white border-b border-gray-100">
         <div className="container-wide py-12">
           <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-brand-red mb-8 flex items-center gap-3">
             <span className="w-8 h-px bg-brand-red" /> Sociétés du Groupe
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {societies.map((s) => (
-              <div key={s.name} className="bg-brand-navy/50 border border-white/5 p-5">
-                <p className="text-white font-semibold text-sm mb-0.5">{s.name}</p>
+              <div key={s.name} className="bg-gray-50 border border-gray-200 p-5">
+                <p className="text-brand-dark font-semibold text-sm mb-0.5">{s.name}</p>
                 <p className="text-brand-red text-[10px] uppercase tracking-widest mb-3">{s.subtitle}</p>
                 <address className="not-italic space-y-0.5">
-                  <p className="text-white/40 text-[11px]">{s.addr}</p>
-                  <p className="text-white/40 text-[11px] mb-2">{s.city}</p>
+                  <p className="text-brand-dark/50 text-[11px]">{s.addr}</p>
+                  <p className="text-brand-dark/50 text-[11px] mb-2">{s.city}</p>
                   <a
                     href={`tel:${s.tel.replace(/\s|\(|\)/g, "")}`}
-                    className="flex items-center gap-1.5 text-white/40 hover:text-brand-red text-[11px] transition-colors"
+                    className="flex items-center gap-1.5 text-brand-dark/50 hover:text-brand-red text-[11px] transition-colors"
                   >
                     <Phone className="w-2.5 h-2.5 shrink-0" /> Tél : {s.tel}
                   </a>
                   {s.fax && (
-                    <p className="text-white/30 text-[11px] pl-4">Fax : {s.fax}</p>
+                    <p className="text-brand-dark/30 text-[11px] pl-4">Fax : {s.fax}</p>
                   )}
                 </address>
               </div>

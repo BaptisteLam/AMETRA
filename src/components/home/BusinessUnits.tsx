@@ -34,7 +34,7 @@ const units = [
 
 export default function BusinessUnits() {
   return (
-    <section className="py-24 bg-brand-dark">
+    <section className="py-24 bg-white">
       <div className="container-wide">
         <ScrollAnimator>
           <div className="animate-on-scroll text-center mb-16">
@@ -43,7 +43,7 @@ export default function BusinessUnits() {
               <span className="text-brand-red text-xs font-semibold tracking-[0.3em] uppercase">Nos entités</span>
               <div className="w-12 h-px bg-brand-red" />
             </div>
-            <h2 className="section-title text-white">
+            <h2 className="section-title text-brand-dark">
               Nos Business <span className="text-brand-red">Units</span>
             </h2>
           </div>
@@ -52,7 +52,7 @@ export default function BusinessUnits() {
             {units.map((unit, i) => (
               <div
                 key={unit.subtitle}
-                className={`animate-on-scroll delay-${(i + 1) * 100} group relative overflow-hidden bg-brand-navy-light`}
+                className={`animate-on-scroll delay-${(i + 1) * 100} group relative overflow-hidden bg-gray-50 border border-gray-100`}
               >
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
@@ -74,10 +74,10 @@ export default function BusinessUnits() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <p className="text-white/50 text-sm leading-relaxed mb-5">{unit.desc}</p>
+                  <p className="text-brand-dark/60 text-sm leading-relaxed mb-5">{unit.desc}</p>
                   <ul className="space-y-2 mb-6">
                     {unit.services.map((s) => (
-                      <li key={s} className="flex items-center gap-3 text-sm text-white/70">
+                      <li key={s} className="flex items-center gap-3 text-sm text-brand-dark/70">
                         <span className="w-4 h-4 bg-brand-red/20 flex items-center justify-center shrink-0">
                           <span className="w-1.5 h-1.5 bg-brand-red" />
                         </span>
